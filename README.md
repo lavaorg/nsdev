@@ -1,0 +1,2 @@
+# nsdev
+NorthStar development environment.

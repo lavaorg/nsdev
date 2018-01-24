@@ -10,13 +10,14 @@ The development environment will follow the following usage
 * Builders will create the relevant .a and executables for the relevant target (primarily Linux x86)
 * Scripts will create Docker (OCI) images as a seprate step after the build. 
 
-# build steps
+## build steps
 * . init
 * nsgoget
 * make build
 
-# clean the build artifacts
+## clean the build artifacts
 * make wsclean
 
-# reset the build and src; this indiscriminately destroys all downloaded content and built artifacts
+## reset the build and src
+this indiscriminately destroys all downloaded content and built artifacts
 * make wsnuke

@@ -1,0 +1,29 @@
+#!/bin/sh
+
+# TODO: make a list of packages, loop through list doing go get; echo name; log output
+# TODO: add support for a -u flag to do updates
+go get -d github.com/lavaorg/lrt
+echo "lavaorg retreived"
+go get -d github.com/gin-gonic/gin
+go get -d github.com/gocql/gocql
+go get -d github.com/Shopify/sarama
+go get -d gopkg.in/redis.v5
+go get -d github.com/channelmeter/vault-gatekeeper-mesos/gatekeeper
+go get -d github.com/franela/goreq
+go get -d github.com/hashicorp/vault/api
+go get -d github.com/samuel/go-zookeeper/zk
+go get -d gopkg.in/olivere/elastic.v5
+go get -d github.com/pborman/uuid
+go get -d github.com/pmylund/go-cache
+go get -d github.com/gambol99/go-marathon
+go get -d github.com/yuin/gopher-lua
+go get -d github.com/golang/mock/gomock
+go get -d github.com/robfig/cron
+go get -d github.com/satori/go.uuid
+
+#
+# get the nsspark repo
+#
+mkdir -p $NSBUILD/spark
+cd spark; git clone https://github.com/lavaorg/nsspark.git; cd ..
+

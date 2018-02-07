@@ -3,7 +3,7 @@
 # TODO: make a list of packages, loop through list doing go get; echo name; log output
 # TODO: add support for a -u flag to do updates
 go get -d github.com/lavaorg/lrt
-echo "lavaorg retreived"
+go get -d github.com/lavaorg/northstar
 go get -d github.com/gin-gonic/gin
 go get -d github.com/gocql/gocql
 go get -d github.com/Shopify/sarama
@@ -16,11 +16,25 @@ go get -d gopkg.in/olivere/elastic.v5
 go get -d github.com/pborman/uuid
 go get -d github.com/pmylund/go-cache
 go get -d github.com/gambol99/go-marathon
-go get -d github.com/yuin/gopher-lua
 go get -d github.com/golang/mock/gomock
 go get -d github.com/robfig/cron
 go get -d github.com/satori/go.uuid
+go get -d github.com/jlaffaye/ftp
+go get -d github.com/pkg/sftp
+go get -d github.com/lysu/kazoo-go
+# lua related (review for removal)
+go get -d github.com/lavaorg/gopher-luar
+go get -d github.com/mitchellh/mapstructure
+go get -d github.com/vmihailenco/msgpack
+#n
+go get -d github.com/lavaorg/lrt/x/lfmt
+go get -d github.com/orcaman/concurrent-map
+go get -d github.com/aws/aws-sdk-go
+# portal related
+go get -d github.com/dgrijalva/jwt-go
+go get -d github.com/gorilla/websocket
 
+go get -d github.com/smartystreets/goconvey/convey
 #
 # get the nsspark repo
 #
